@@ -1,7 +1,7 @@
 # Autonomes-Fahrzeug
 Das autonome Fahrzeug ist ein mobiles Robotersystem, das mithilfe eines Ultraschallsensors Hindernisse erkennt und selbstständig ausweicht. Die Steuerung erfolgt über einen Arduino Uno R4 WiFi, der die Sensoren, Motoren, LEDs und das Display koordiniert. 
 
-´´´
+```
 #include <Servo.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
@@ -310,4 +310,4 @@ void updateLCD(int dist, int angle, String state) {
   lcd.setCursor(0, 1);
   lcd.print(state);
 }
-´´´
+```
